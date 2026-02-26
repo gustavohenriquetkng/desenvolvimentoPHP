@@ -1,5 +1,5 @@
 <?php
-/*function saudacao (): string{
+function saudacao (): string{
 
     $hora = 9;
     
@@ -8,17 +8,19 @@
 
         $saudacao = 'Boa Madrugada';
 
-    }else {
-        $saudacao = 'Boa Noite';'
+    }elseif ($hora >= 6 && $hora <= 11){
+        $saudacao = 'Bom Dia';
+    }else{
+            $saudacao = 'Boa Tarde';
     }
     return $saudacao;
 
-}*/
+}
 
 
 function resumirTexto( string $texto, int $limite, string $continuacao = '...'): string{
 
-    $textoLimpo = trim($texto);
+    $textoLimpo = trim(strip_tags($texto));
     if (mb_strlen($textoLimpo) <= $limite){
         return $textoLimpo;
     }

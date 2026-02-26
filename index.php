@@ -6,6 +6,10 @@ require_once './Sistema/configuracao.php';
 include_once 'Helpers.php';
 
 
-$texto = 'Este é um texto longo que será resumido para demonstração do funcionamento da função resumirTexto.';
+$texto = '<h1>Este é um texto longo que será</h1> <p>resumido para demonstração</p> do funcionamento da função resumirTexto.';
 
-echo resumirTexto($texto, 10, '...');
+echo saudacao();
+echo '<br>';
+
+echo resumirTexto($texto, 500, '...');
+
