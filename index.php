@@ -25,3 +25,27 @@ echo '<br>';
 echo formatarNumero($numero2);  /*Chama a função formatarValor, passando o valor da variável $numero como argumento, e exibe o resultado formatado. */
 echo '<br>';
 echo formatarNumero($numero3);  /*Chama a função formatarValor, passando o valor da variável $numero como argumento, e exibe o resultado formatado. */
+/*var_dump(validarEmail('gustavohrn8@gmail.com')); Chama a função validarEmail, passando a string 'teste' como argumento, e exibe o resultado usando var_dump para mostrar o tipo de retorno. */
+echo '<br>';
+
+
+/*var_dump(validarEmail('gustavohrn8@gmail.com')); Chama a função validarEmail, passando a string 'teste' como argumento, e exibe o resultado usando var_dump para mostrar o tipo de retorno. */
+echo '<br>';
+if(validarEmail('gustavohrn8@gmail.com')){  /* função que verifica o email adicionado retornando valor válido ou inválido */
+    echo 'Email válido';
+} else {
+    echo 'Email inválido';
+}
+echo '<br>';
+
+if(validarURL('https://github.com/gustavohenriquetkng/desenvolvimentoPHP')){  /* função que verifica a URL adicionada retornando valor válido ou inválido */
+    echo 'URL válida';
+
+}else{
+    echo 'URL inválida';
+}
+
+
+
+
+

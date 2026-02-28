@@ -1,5 +1,24 @@
 <?php
 
+
+function validarURL(string $url): bool{
+    return filter_var($url, FILTER_VALIDATE_URL) !== false;
+
+}
+
+
+
+/**
+ * Summary of validarEmail 
+ * @param string $email email a ser validado
+ * @return bool retorna true se o email for válido, caso contrário retorna false
+ */
+function validarEmail(string $email): bool{   
+
+    return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
+
+}
+
 function formatarNumero(float $numero): string {
     return number_format($numero, 2, ',', '.');
 }
