@@ -1,6 +1,33 @@
 <?php
 
 
+/**
+ * Summary of validarUrlcnf
+ * @param string $url1 URL a ser validada 
+ * @return bool retorna true se a URL for válida, caso contrário retorna false
+ */
+function validarUrlcnf( string $url1 ): bool {// função personalizada para validar URL, verificando se a URL tem pelo menos 10 caracteres, contém um ponto e começa com "http://" ou "https://"
+    if(mb_strlen($url1) <10) {
+        return false;
+    }
+    if(!str_contains($url1,'.')){
+        return false;
+    }
+    if(str_contains($url1,'http://') or str_contains($url1,'https://')){
+        return true;
+    }
+    return false;
+    
+}
+
+
+
+
+/**
+ * Summary of validarURL
+ * @param string $url URL a ser validada
+ * @return bool retorna true se a URL for válida, caso contrário retorna false
+ */
 function validarURL(string $url): bool{
     return filter_var($url, FILTER_VALIDATE_URL) !== false;
 

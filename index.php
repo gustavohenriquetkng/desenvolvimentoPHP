@@ -44,8 +44,10 @@ if(validarURL('https://github.com/gustavohenriquetkng/desenvolvimentoPHP')){  /*
 }else{
     echo 'URL inválida';
 }
+echo '<br>';
+if(validarUrlcnf('https://github.com/gustavohenriquetkng/desenvolvimentoPHP')){  /* função que verifica a URL adicionada retornando valor válido ou inválido */
+    echo 'URL válida';
 
-
-
-
-
+}else{
+    echo 'URL inválida';
+}
