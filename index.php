@@ -50,4 +50,7 @@ if(validarUrlcnf('https://github.com/gustavohenriquetkng/desenvolvimentoPHP')){ 
 
 }else{
     echo 'URL inválida';
+
 }
+echo'  <br>';
+echo constant('SITE_NOME');  /*Exibe o valor da constante SITE_NOME, que foi definida no arquivo de configuração do sistema. */
